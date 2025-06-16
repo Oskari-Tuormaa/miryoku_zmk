@@ -211,6 +211,7 @@ jobs:
                 to="${GITHUB_WORKSPACE}/miryoku_zmk/config/$outboard_to"
                 mkdir -p `dirname "$to"`
                 ln -sr "$outboard_dir/$outboard_from" "$to"
+                echo cloned $outboard_repository
               fi
               if [ -n "$outboard_branches" ]
               then
